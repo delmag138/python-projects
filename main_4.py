@@ -18,7 +18,7 @@ def login_system(username, password):
     num = 0
     trials = 3
 
-    while True:
+    while < 3:
         num += 1
         trials -= 1
         user_username = input("Please enter yout username:")
