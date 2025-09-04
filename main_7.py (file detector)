@@ -1,0 +1,17 @@
+"""
+Detect Suspicious File Names
+Ask the user to enter a filename.
+
+If it ends with .exe, .bat, or .sh, print "⚠️ Suspicious file detected!".
+
+Otherwise, print "File seems safe."
+
+"""
+
+def file_status(user_input, *args):
+    if user_input in args:
+        print(f"Suspicious file detected!")
+    else:
+        print("File is okay.")
+
+file_status(input("Enter the file extension type:"), "exe", "bat", "sh")
